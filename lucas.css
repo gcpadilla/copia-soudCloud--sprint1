@@ -1,0 +1,35 @@
+.lucas{
+    padding-top: 120px;
+
+}
+.lucas-container{
+    font-weight: 100;
+    font-size: 14px;
+    display: block;
+    white-space: nowrap;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 223px;
+}
+.imagen-lucas-2{
+    background-image: url('https://i1.sndcdn.com/artworks-000240171087-8xgskj-t50x50.jpg');
+    width: 20%;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+.lucas-i{
+    font-size: 10px;
+    color: #999;
+}
+.imagen-lucas-1{
+    background-image:url('https://i1.sndcdn.com/artworks-000126428348-adbud7-t50x50.jpg');
+    width: 20%;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+.imagen-lucas-3{
+    background-image: url('https://i1.sndcdn.com/artworks-000128023742-owl8w0-t50x50.jpg');
+     width: 20%;
+      background-repeat: no-repeat;
+       opacity: 1;
+}

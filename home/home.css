@@ -1,0 +1,93 @@
+.imgheader{
+    position: absolute;
+    width: 1200px;
+    height: 70vh;
+    margin-left: -3vw;
+    border-top: 4px solid orange;
+}
+h2{
+    position: relative;
+    margin-left: 4vw;
+    color: #fff;
+    font-weight:50;
+    font-size: 1vw;
+    margin-top: -25px;
+}
+.icon{
+    color: #fff;
+    font-size: 2vw;
+    position: relative;
+    margin-left: 1vw;
+    margin-top: 2vw;
+}
+.text{
+    position: absolute;
+    color: #fff;
+}
+.titulo1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 6vw;
+    margin-left: -11vw;
+    font-weight: 80;
+    font-size: 3vw;
+}
+.parrafo1{
+    display: flex;
+    justify-content: center;
+    margin-left: 12vw;
+    font-size: 30px;
+    position: relative;
+    max-width: 63%;
+    text-align: center;
+    font-weight: 100;
+}
+.register{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    height: 4vw;
+    margin-top: 11vw;
+    background: rgb(255, 81, 0);
+    color: #fff;
+}
+.register:hover{
+    color: #fff;
+}
+.conbotones{
+    position: absolute;
+    margin-left: 55vw;
+    margin-top: -30px;
+}
+.botones{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+.botones li a{
+    color: #fff;
+}
+.list1{
+    border: 0.5px solid #fff;
+    color: #fff;
+    height: -4px;
+}
+.list1:hover{
+    color: #fff;
+}
+.list2{
+    background: rgb(255, 81, 0);
+    color: white;
+}
+.list2:hover{
+    color: #fff;
+}
+.list3{
+    color: white;
+}
+.list3:hover{
+    color: #fff;
+}

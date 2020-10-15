@@ -1,0 +1,396 @@
+body{
+    background: #f2f2f2;
+}
+.imgheader{
+    position: absolute;
+    width: 1110px;
+    height: 70vh;
+    border-top: 4px solid #f50;
+}
+.name{
+    position: relative;
+    margin-left: 4vw;
+    color: #fff;
+    font-weight:50;
+    font-size: 1vw;
+    margin-top: -24px;
+    margin-left: 70px;
+}
+.icon5{
+    color: #fff;
+    position: relative;
+    font-size: 2rem;
+    padding-top: 25px;
+    margin-left: 20px;
+}
+
+.icon1{
+    color: #fff;
+    font-size: 2.5rem;
+    position: relative;
+    float: left;
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+}
+.text5{
+    display: inline-block;
+    padding-top: 8px;
+}
+.text{
+    position: absolute;
+    color: #fff;
+}
+.titulo1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 6vw;
+    margin-left: -11vw;
+    font-weight: 80;
+    font-size: 3vw;
+}
+.parrafo1{
+    display: flex;
+    justify-content: center;
+    margin-left: 12vw;
+    font-size: 20px;
+    position: relative;
+    max-width: 60%;
+    text-align: center;
+    font-weight: 100;
+}
+.register{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    height: 4vw;
+    margin-top: 11vw;
+    background: #f50;
+    color: #fff;
+}
+.register:hover{
+    color: #fff;
+}
+.conbotones{
+    position: absolute;
+    margin-left: 45vw;
+    margin-top: -33px;
+}
+.botones{
+    position: relative;
+}
+.botones li a{
+    color: #fff;
+}
+.list1{
+    border: 0.5px solid #fff;
+    color: #fff;
+    height: -4px;
+}
+.list1:hover{
+    color: #fff;
+}
+.list2{
+    background: #f50;
+    color: white;
+}
+.list2:hover{
+    color: #fff;
+}
+.list3{
+    color: white;
+}
+.list3:hover{
+    color: #fff;
+}
+.listimg a{
+    color: #000;
+}
+.listimg a:hover{
+    text-decoration: none;
+}
+.busqueda{
+    display: flex;
+    justify-content: center;
+    margin-top: 35vw;
+    position: relative;
+    -webkit-appearance: none;
+}
+.barrasearch{
+    width: 40vw;
+    height: 4vw;
+    background: #f2f2f2;
+    border: none;
+    border-radius: 3px ;
+}
+.lupa{
+    color: gray;
+    position: absolute;
+    top: 20px;
+    margin-left: 18vw;
+}
+.lupa:hover{
+    cursor: pointer;
+}
+.busqconbot{
+    display: flex;
+    justify-content: center;
+    margin-top: -2vw;
+}
+.btn3{
+    margin-top: 35vw;
+    border: none;
+    background: #f50;
+    color: #fff;
+    border-radius: 3px;
+}
+.parrafo9{
+    margin-top: 36vw;
+}
+h3{
+    margin-top: 3vw;
+    text-align: center;
+    font-weight: 50;
+}
+.cardimg{
+    width: 20px 20px;
+}
+.card{
+    border: 0;
+    font-size: 15px;
+}
+.facgoo1{
+    display:block;
+    width: 30vw;
+    height: 3vw;
+    margin: auto;
+    background: #264285;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+}
+.facgoo2{
+    display: block;
+    width: 30vw;
+    height: 3vw;
+    margin: auto;
+    background: #4285f4;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+}
+.busqsearch{
+    width: 30vw !important ;
+    margin: auto;
+}
+.busqsearch1{
+    width: 30vw !important ;
+    margin: auto;
+    background:#f50;
+    margin-top: 1vw;
+    color: #fff;
+}
+.busqsearch1:hover{
+    color: #fff;
+}
+.help{
+    margin-top:10px;
+    float: right;
+    margin-right: 3.5vw;
+    font-size: 13px;
+}
+.ejemplo1{
+    max-width: 80%;
+    margin: auto;
+    font-size: 13px;
+    color: #999;
+}
+.ejemplo2{
+    max-width: 80%;
+    margin: auto;
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 90px;
+}
+.linea1{
+    margin: 1em auto;
+    position: relative;
+    text-align: center;
+    color: #000;
+    line-height: 1.3;
+    font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+    font-weight: 400;
+    width: 410px;
+    font-size: 1rem;
+}
+.linea1::before{
+    left: 0;
+    display: inline-block;
+    width: 43%;
+    border-top: 1px solid #333;
+    content: " ";
+    position: absolute;
+    top: .5em;
+}
+.linea1::after{
+    right: 0;
+    display: inline-block;
+    width: 43%;
+    border-top: 1px solid #333;
+    content: " ";
+    position: absolute;
+    top: .5em;
+}
+.contodo{
+    background: #fff;
+}
+.botonabajo{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 65px;
+}
+.botonbajomusic{
+    width: 250px;
+    height: 44px;
+    margin-top: 30px;
+    border: 0;
+    border-radius: 3px;
+    background: #f50;
+    color: #fff;
+}
+.section2img{
+    margin-top: 30px;
+}
+.apps2{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 325px;
+    margin-left: 45px;
+}
+
+.palabras2{
+    font-weight: 100;
+    line-height: 1.2;
+    font-size: 36px;
+    margin-bottom: 17px;
+}
+.palabras2::after{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-image: linear-gradient(90deg,#7d01a1,#f30 50%,#f50);
+    margin-top: 15px;
+}
+.parrafosec2{
+    font-size: 24px;
+    font-weight: 100;
+}
+.botonapp3{
+    background: #000;
+    border: 0;
+    border-radius: 3px;
+    height: 40px;
+    width: 150px;
+}
+.iconapp1{
+    font-size: 31px;
+    float: left;
+    color: #fff;
+    margin-top:3px ;
+}
+.iconapp2{
+    font-size: 26px;
+    float: left;
+    color: #fff;
+    margin-top: 6px;
+}
+.parrapp{
+    color:#fff ;
+    font-size: 14px;
+}
+.imgcel{
+    margin-left: 63px;
+    height: 375px;
+    width: 614px;
+    margin-top: 40px;
+}
+.imgcontext2{
+    position: relative;
+    height: 300px;
+    background-color: #141414;
+    background-image: url(https://a-v2.sndcdn.com/assets/images/hp_creator_image-f3d92e09.jpg);
+    background-size: cover;
+    background-position: 100%;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    padding: 0 570px 0 70px;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+
+} 
+.imgcontext4{
+    font-size: 30px;
+}
+.imgcontext5{
+    font-size: 22px;
+    font-weight: 40;
+    max-width: 430px;
+}
+.botoninfo{
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background: transparent;
+    color: #fff;
+    height: 45px;
+    width: 150px;
+}
+.piedepag{
+    text-align: center;
+    height: 375px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;    
+    background: #fff;
+}
+.piedepag1{
+    font-size: 36px;
+}
+.parrpiedepag1{
+    font-size: 25px;
+}
+.parrpiedepag2{
+    font-size: 24px;
+    margin-top: 7px;
+}
+.parrpiedepag3{
+    margin: 10px 0;
+}
+.botonregister1{
+    width: 180px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    background: #f50;
+    color: #fff;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 100;
+}
+.botonregister2{
+    width: 140px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #fff;
+    color: #000;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 30;
+    margin-left: 5px;
+}

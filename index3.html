@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="lucas.css">
+  <script src="https://kit.fontawesome.com/1078660f04.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="stylemariano.css">
+  <title>Sound Cloud</title>
+</head>
+
+<body style="background-color: rgb(235, 235, 235);">
+  <!------------------------------------COMIENZO HEADER---------------------------->
+  <header class="zindex">
+    <div class="navbar">
+      <a href=""><img class="imgnavbar" src="descarga.jfif" alt="#"></a>
+      <div>
+        <nav class="nav nav-pills flex-column flex-sm-row">
+          <a class="flex-sm-fill text-sm-center nav-link" href="#">Inicio</a>
+          <a class="flex-sm-fill text-sm-center nav-link" href="#">Stream</a>
+          <a class="flex-sm-fill text-sm-center nav-link" href="#">Biblioteca</a>
+        </nav>
+      </div>
+      <div>
+        <form class="busqueda">
+          <input class="headerSearch__input sc-input g-all-transitions-300" placeholder="Buscar" type="search" name="q"
+            autocomplete="off" aria-label="Buscar" aria-autocomplete="list" aria-owns="searchMenuList">
+          <i class="lupa fas fa-search"></i>
+        </form>
+      </div>
+      <div>
+        <a href="/upload" class="uploadButton header__link subirheader" tabindex="0">
+          <span class="uploadButton__title subirheader">Subir</span>
+          <span class="uploadButton__status"></span>
+        </a>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <img class="imgperfil"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAgAElEQVRogW26Z7Bm13UduPdJN345vNyvc0ajATSA7iZBgIRAgRkMpkVJlGzZ0rBcEqc81sgzcqiy7HKpyiq7SlM1U0N7hpIpERJJD1WcYgDFAAKgkBqNRuf4ul/3y+9970s3nugfTdJ0OHXuqfPzrH3W2vveuzYGExOUUqv11MRkFPqj/rZWZVFkXJA0K5yDPM0EZe1Wq1WrzczMHNw1DQSVkTcXby/eW+330+1+4izVpAwrcZZK4kgY+pVm1W9VwlZNhKIwZU265KUL7efec/K5D+JY8Vp1eeHG2X/3x1OUH/qHvxXN7CyKQgvw0PeASKWY4BbBOedzgUisNpZQa61zxoEFAHAIQACAssCLozD0wzAMiyLf6m1pJZFQqSQh1Frr+2Ho+/Vade/une1ms9OOibNh5HMkWZIxJipx1VrXmZkIo0qeq/n53WVRMMFHadJqNwuZB2Gobi4PR6OHP/J0tzupKTFlOTfVLeP4/PK98d9cmD593Maxl7ka9wtn/CBARIqEIBpjnXPWOSQUAAAcICAiAiISRKRxo0oIKqkY474XEEIAUSotmDDGhkHUbrf37t41PzfTrFd3z8+1G+GenXMVzxNAWpUaJ1zKkjEaNVujcRqEFUKoxzxA6PU2wygMqp4HSK6t8oOzKXXdVjsT0BKR1DKY3ZlmOl++O1y8O3viQY/GcpyYSDjniixnhAZ+aJ0ljInAdxb+xwCM1VJpWUp0SDkjhFJKLTqlNDrsdLqcUQJ2utuenuy0mvVGjVNnq543151oVuudVrPWrA/62zm4Wq2RZYWzzvM8qwyhGIV+o1PburKQLiw/+7u/Va3Xzl+8OLdnt2dBWlsLGod37LmysYC37ro0qx/eoyhDDtYZjowgEkCkxIAzDtH9FwCEEPgZgO7UhGBCG8sor1Sr1WqVexwRQBvGWFlkk532kUMHJtv1WhzEHo992qzVPGSoDYClhNYbtR3zM6sbm0VZFFIm45Q6zPOsP9ianZ2xoMRmUuu2T/3ap+rV2laS3L2xMDkz7bNAmdRRC710ZWnRu7vEGhHbMYtSoXFxFDrrSimFJxxSbQwj5GcAAO5fAwEA2p6Y8H2fceEsOHAAVmmptdZFnqWj6YmJ48eO7N89P9PtTLXq7Wa93aihQ11K5xznjHvUoVUqn5qeun71qu+H7U4nS3JASygKj+lkHKX2+HPP1vftTEZ5rdXavLvUy8aTE1MusEzQf/Pbf3BoZu7m0i0zGrVn59qdrpFaG00IJYw6pIDoCeGsRUQAhwQREQABEBEJ83ygDBwhhIShX6lG4Mxo2M/TUa0ST092PEa7zeYDh/dPdtrNOA79CC0KL0DOSq2MMxxN1WfNgHzomSeIzRmYMBJSFqXMV1ZXJ/3azcXFI8+8RxYqatQ7jdbDxx6+fW/p9r1FXZiNy3fmZjuXzl1/4DN/e1vbc3/+fLE9rPm+1cYh8MCXWllrjbL4Xw9CCCEEEWmqtDGWUIoEfU9QQrI0SdMR6rLTaT380PEPv//9Rw4dIFozhEBQq5wxVvgC0Dl01ug0HVN0tUpcrTW8qHLm7Lk0za01WZlLXexvdD/5S79k980KyjOjSaaqtepGOrh99ereub03vv+GWt489ZlPvOu5T95Lt+jli7eS8uDBg4RzCY4K4QAb1YYu5U8D7/CnIgZAAKCzszsazRYgEsqbrZbniSzLdCHnd8yefOzkxz784R1zM8TawPetdYQIJVPOCThjjZJFprUijljjAFwYhIxyQLra2xznKRdCKx1XGp988nQ/GUcTU0XWt9VYbdtrb7zK42hteaF48+3WbOfBX/94ptWhXYd+tHC7urI6Gg12Hz20xYEz3nBModbMEW0cOABAZAgECAEEAEIIoQDAOQ98oZUc9Hsqz+IomJmaPnzoQLUWUySUUmst59wYQ7mHSI2zeZ4jIZxzynmplJQyGY2qYXBk/65dU92AEI/SOIwH29vvvHXhR3/5TVXaQEQ0LxfvXtUi279ndzAobq6vPv63PoKIjLEC1a/91t+7S9Xa2WuLV29MhDEd5xmxVhlSmvvMgf9moKV5qSghlWplotUOfZYNBnky8jk99dijp06ebNVqhCAjhBGM48iBs1YBgrEWAEopwSEgUEbLUjNKnTWC80B4Uqo0L4yx/cGgGoU4MhOnTvhByMA78/Zb2oenjzz20he/ImZa3sH5TnfSGAuceUGwY++uW2cvrV+5NbdnvtluGm2d71fAV04BIgA4ZxHJT3IRIuXCowRkNt5YXVpfvudUcfjAvl9431MPHzt++OABX3hgLVprjfY9oaSkBNM0tc6FYSC1ZJQCglSKUa61Bm04Qc8TzUbLD8PBMOmrHmt4kTZzTz0IlGz0tm4uLX70Ax989YtfWb926+BHnr6+uTZZbfE4ZIwqozvNrglE/9pC797q7KG9xBOjrHAWCXXuv0TeAd7PqkBDjwkGDGzk8X3zc6ceO/Ged51+6NiDO+bmwiBgiBSd1tpZgwBa63GSEMQwDJN0TJBkaUII0Vo7RzhnBAkCcMqa7U6rPeGFwcLtDVOtdIi395GjQaX25utvTM5MT8rgjT99fuzTv/WPPy8Iv3z+wtz+3S5XnudZ66ZnZu6trwTDYrs/7B7cE6KXCuTOOryvgvvk+clDd021mtVwutU4tHfX6ZMn3nP65P49uypxWI2rWkqCSAGsUQBgrHPgnDK+5w8G21qVm5ubjXrNWksIsc55vmeM0doAFUiZCPx2qzFYTpa3th/ctWtmZmIbYen2rccfPfKt/+MLuD1+8G9/tLF313S9s7K6vHB34YEDh9ARBxB6/uKNhaofVVkwTvPGjinjNFrr4H6l+gl7AByAo889866HHjj0xOnHTj/26OH9e1qtli8EoyQQoWDEWSulNEYbY7TWzlmf+0WWr6+vbWysP3DkkDE2T1NPCBH6ZV4aoIT6o6yQWnPO8jzttPj58+c8H6d37nrh3r1uXHOuLO5tnr966VO/+9uFo0jJvgN7bl+9srHdn56ZLbW0ufzOF56fnNtx4eq1ubiRWhlUQ0RinfvJyQHhp4Kmf/Qv/vc983NTnVa7VvWFcM5ZYx2ANtb3/SLP8ywjFAkhnHPP88sku3TpovD4w8ePDfr9dDz2POGMRYZc+A6YNKAsKKullrLMQLD1u1mv8MLG4VeyeL5y5OzZmw/ve19nJ9l3+hQQ1lcFQ7t2c2EtGVAi2pPdc999aenc9euXrz/7q58uh0O6tq13twQR7n7tRfyZiJ1z9Dc/9UFOKWXCIVpEJGidMVpZcFIWnHPOmbO2Xqsh0P724O3z5x9+5JH53Tu3hyOpNA+jtFTUD7lfV46lpVne2LAUSyW1UuNxoqyL2OjtCxt7uvGZy/xCGfX9o2f0/GL8lNGkUteOZkwVV994pxHHS+PbM7XJtZcu3z7/xgf+6WcPP3zy5tKK7G2rWxszBx6wpii4BGBxIYh2MrAlFvRXn/tFQgjlFJHch0gIoZRq68IwrNcbjDHOeZIk43Fy4cKFX3zm/ULwre3ecDRqdTp5oeJKLYprW+NieW1zdWPr1p27P379zSCu5qWUxvjIK5Pi4t3zR/Y23r6S6PE140+yZjSGpcuLo1eu+a/eqr50GfLOI6ZykBbdi4vD4u47R55+zxMf/ohORu3dk9+//nJ7XI7X7nUOHYCYKbXufCfIhF96lJT01z/xQUopp4xy6gnP8z3h+1yIWq0RhmGW5ZRSAFhZWVlYuP3kk0+WRVGqMsmymR3zozSnXlhqWFxZe+vC1a/8p786e+HSymYvl3owGidJxjzPN2E40WlVZ/WInXz40QtXN1V2TVebYVxXtOuhZjDMIBj13fIbry3eOL+yur1CTg+mTtnUVOYC4qsDhx+49KOXCr2Gwmt6U0I1pfU1SIIlBaAfe/9psEAppUgAiXVOaSulUkpnWaaU7vV677zzzng8fvjhR7TWZVEOhkMvjAxS5ofr24PrC3f+4itf+8FLLxvnHFLrbKUSIwKisdo0dkYN0Z73Gueun/u7H/vgf7geV24uWBKXtRZwra1yJXWbC+7Ml/z1yySccdUD0GgNitXLa83vr5b7Z0Rbivj43vPfOV8srczPTYWdaacRaVFSRbFKP/PRX6CcMsIQER1q4wpZ5mWxvd1fW1vr9bZHo9GRI0eOHTs2HI76/b7RJohiZNxRtra1/c6Fy9/45rcuXLqc51mtVo2iIAqCVr1iZEGtnuw0T+3cOw5AmlSElbKazNP+uz7y6Ctfv4bTTbFNAhZ66XU889VAZ+7Q+9T0uyyrsSAh/chEyqvWXj0TNOqtgztHDe2vXrqyOeg1Du+Sng4EWGUBBD7/x/+s2WjU4opRdjAcJ3kBjHLhVavVHTt2MCaq1Wq/39/a2ipLRSnlnHt+mBt3Z2XlwrXrb509d/nyZaN04HPn3ORU18jSKelzOjPZfu+T725P1JXy5EZyu8jfOPPW9wed5JXf3cxuTYZPDpKrX/rr5c//ky+Dy+HI0wB764MbacX7hcOuCt7X31z3WGPcrgSeOLqj8cu/6J350v+19uprncOPHvvsr2hWNhCTTDHP5/1+f2N1jVNRrzV37doV1+tUcFXKJEkYE8vLywDQ7/e1tvV63RpIi+HC0soPXnnlzbff3ur1m/VGpVn3fW8wGAz6I18QVWT79hyc7bRbjWaNtTfkFm0KMcgqdVtclM5sB74P5SCueJ95bv32jeTPXnxic9D4h78m/+lnH6/bg5ZtJrr7pyx55fXb//PzS5fAvrVMVv9q+10H3h+trAxvvnPvRzNHPvChdDQUnLNer9dutuamZ3wRWAPamNFodB/AxsbGeJwCQJIk1Wq10WilaVrkcmsw+MZ3//r81euMezMzM77HsyTd2O7V4koYhuNRf6LVpoTP7ZynlHIJ1I/v9XrW5ZzTh2aGjPnDslfjXgHDtUH++d/89B/93lEiBaAPxE/cegwsJNdEMfneR+l3Hn9wxzN/xlO6VCXfuLH31N7/Ldv6Y+9H39ox0aAHjztrWDOmjKqt4RYhtFKpeEEFBAM/9pjtTPmVRiEEG41GiJgkSVmWWtEzb72zcPNWLQrq7U6SpHcWFudn59EPt3ubhw/ui/gsyGJuojXdnWjWW2XO/bGt6d6WIyacOfbExuL2vckALd2ODS231g7sP+lUqbwmlH0CilABZlu5ovRXk+zWWz982X3vQvnkKYDZfGPhpcU+PfnLc9s3h3/+xWf/0e/zRpd+5H2nuV8NK80obnAWSKlVaajDUmnKGCASQj3Pj6LYOTDWjYbJysrKYNRvddt5nssyb9abd+4s3Ftaeurdp08/foIDrq8sP/2+9+7bu6/IC20HjpjtARmkxbgYTM37nfms051RUF8rLpS4ffbq7Pt++8bGvdfCULx8Zvzv//y7H3ny+PLmOxf6r8tl8sDR40efPT6hJt5aLMXMrqhKUheN4EBzamL7pa/NPPQ0/ewnP+7HNcZCA4zzIAwqgnE0epDJ4XiYF4UDoEi01tZaADDapVlWyjJNRqNhn4Dbt3f3vj27njh96uknn9hcXbl68dKRg4ceevBh59BayBPXG24O8r4jukjdl//ihaFqquiRHQwWBq/9P19u/q9fZmrx8ssvX/qTi/Ffv63zwQ/euPGN45PHTuz84NzksSic2buj84mnDhKmvn9JOZ9QxRSNhs3uxN2zsHWHlcbocUqo5EHF0bBwLk/G2Wh4Z2Oz3+9rrWuVuNvuBEGAzhRFUea6Xqt0283B9ma31TDGjAdb9Xo97/de+9GLW6vrvuc99shjvgi01nlWCiEIa3hRoRM53r7brM989Wvm6y9fTWEEwoviw/zW10tGoyc+qcf30gtfuffYuy6dP/WJ52rH/WaKaxQyWW6ycO7XPhb+4bf6ZaUBAL5I0gzuHfpQ+tLvsxt3lmdnJqIAVpYWB+UiYX5vY33hxuVxnjMk2/0ep+zwwf3Tk1PoLGOMOvB90axWI08AWhTcEzwdDjSmRVF0mp33/8Iz051JVWptDac8y4dpOdKWbm6MGGOUIgm4FJrENcbDbOGLwBkcfo6u33P9a/EH/1V/+wa29Ec+f27t23JCTCQki8P9BZSz1c5njgz/5K6xzugi4L63EO2P20fYO3e3fvz2hay/OUqz9VE5Kh2jGDKIoqjMC6NlJQxe/vGr87NzO+fnJrsTczvmQl/MTnXDgGfpOAxDByCEP92d2L1zV63aaFSbW/1to6zWWmmltWh2+OhehgwB6eamyuk93mzR4BB/5zXpHDv1aXHrdRPugkOPJxderE7tGG9lZNr/0QX16cM0jhoyTyseAUc+cTz6fy+WYZ1BhlENN51RMx9lZ1dUujqA0RYDUzqOSBllBO32aByHUZFnFcrA6JWVlXScTD092WrUOGc+Z8GxBz2PdzoTaZq2Op0o8Kx2TmGe54IKJ5B7TCcaiEmTPPAb0gz62bYXUhi5rugsX3xRFeg/8mmysq4n9tpRIq4g7pmThLq2ZiZcTiId+QzABZkxJaX6sXd36fN3tS2N77J8HSpdve9xKvY9TQAD6igBQOoHkceJKbJSW6m0M3Z+fp4i+kIoKRHJieMP7JrfGYZB5PuyVEoqAqwoyixPrHFK2yLLjbHWOalK50yhMSvHWbE9HNmVze3bq8tIW/2NKy0ZmwefKdO+ogMyGnrDVTVzkFW0ZV0LuZ/Sul765Lur6PIhNkLCBuC1fHj+r26t8zrxKpyQoGymZEDTJ34vrtSOV1RElETXG2zKPK/Xqr4Xdjxvqj1FGYahVS4PK/Hh3fNTtW4liAXjxjhKaFkWRZlqLXWhldQEwVqXFDkRrDQ2U0pJV4BKB8nGKN1YXbnTD7DsGZgxUw9jI2Zrt/3abHF3hR89XYbMkKrNejBMjS3fudb7J5/aSRllThOkgdKS1lYH6txtJv2cO8iEYmWLedKs6fCV4Oiz8yRYvDrT3NcvtA+20fILzSOrXDGS1js2t++RQ4cPPfSe4daSlLJai4XgW1uFMYYQplRpnGNMJEnie6E1Js9zA6i1BqogJ1KbwXCzl+myyL1cut1zcGx3efZ1OPh4eenHeOp9HCXLQMtRXPMURYu+JZWt1JsKJgSikhkXpdGjvTNxqu6B8gkVqKUiA0YIoYE34Pu/P6x87nTX0HS4nRY9GBWbOt3SFCc608cPHj558lRQba2tbwDBJEnqjWq1WhXC95gHYMssv3Lt0uTkZKvVKnIJlDJK8P4nOpZOusKaJEkSbcAawWtq51G7cIO297LejfLBd3NRJBuSVCLuiyzLEZihVNQjxZkBVehRJCyACJk/XR2HLT8rCRcRsVTyMZP5wMQdkW5tSu9fXp37/ce33/vAnmkX02YjS9dJtd5odqtOApB+WfqBKRPIinycZHEch2GoilKqApEePXq01+sVuUTEuFYtyzIvC+F7qiilMZmCTIORihIHE/t43GV3l/J4UKl2S102imjLaBwPII4d5YJxT/hZMtraWurUZnyGyuZSmsj3qp6XqZL5neE4qQWeVJr4tUlmUlqp+A0GcfNfn933nR+eW0575WiFV2qRcGa8MS65lRgkPdkf5rLUWud5LksdBGEYRoxwj/teEMXVelYWzBNJliqjkBIL4BTTmCa5HpdUZSmoMuvs0r3ttFPxBOZho9Yb9TclrRA5kN524qxyztoioWW+b2LWs0FeBpzsDP0KQOSRCmSOUkq4lYURxCcZKuKg1Nw6Kpjhnvmz/NE/efHq8sZADQd2OLBJUiZbq/2NzbxkgZckiTRaSlkUBQXKOedMBH4otaKcraytxtWKdtYhEMEyVRgaWGLKUiW5LXILxhkvMpv3wFjT2eVcr2RNCalMFcx1izgELsrxQBapx23kaUJKSksLWWELAJOWQ49xagxzpUrHbnONUDeWImYOFTa0NbRCgNsfklN/+DdbL1zavL1lx5oZOU5NOcRQSmBMAEBZlkmSpGnqDCBSo2yaFy+98uM33jqTyXJyZtqPQqDED4NenmcDWSTj0bCfYsS5J4qS6mHM22a0nUFVBhIiUW/NQEhUo8Y5a8/MsMDL+r0by7cBFKVjrZYEgC4H1N9yG7ezpdvyzoJHsqZZo+LBX9WYGuGhRiIammhLnImmVsPWxb4crd5uYEH8UEkdlpKUjMWcEOqsQUBwzlknpextbX3vlRffOnu2252Ynp32wmB9Y+PazRuXr17JgGbrg+XNjZt3lnKsc4DA6yoiy/YO0KQimK3HQIViOsyEs06V27KUCrywM/eb7221qhPWMMEiojXhZWuq9doVt5raWuzLfNTCu0ybJnNboAaEhIaDY9QBATviRg/izjdk5wcLxS9vrB2bHrfDGhGcjhPtBOPTmm9rpOvotsfLW7fOvX3lhqlEa0XaG6fl8lrBITHAWbg12Lq7eW8wRpcChtt5aypXW8GhD1FrsRGUlNishDSBPJdKoVOChwYR3SivLE81n9BuXVC/QGpEGbnA0+x7qxlQVqIIXOZHLabNOhEGua/QAyBoCRqLynLKmIkImoS5L6THH7my+UxwfmKirmkwURl8+/v/sTt/8MFdB9duX764MDpz65rnu7YfHt17YHp6Gp1buXxta3GFCj4wbrQ5zvpZwgIwBJZV9MjjcvMKHjhRliUY4zFOw6gkqEBTn7FhIZuyYtpVMJEnORpTInoRAZK4odkCWEfoOIwS4c8YZhnE4Kjn0HMlpVZxhsi4piLTfVCGclJTbMjX37LunaWJnW++8Cvv2lvrHD52+uSXvvylL337/4/8go9qOaTNie7J4yfe/+STP37t1SuXrma90e5DB1XkX7x0hVK+khqBSeyRcva4qtWUX4f1PgAAEG0cGMMdsZSbzBaeB65SK4d/96OzFKiEFsVN4uoehn1M65M14lnuVw2hfVObZkvUP/kbQHwLHlAk1BJqLYB2gEGzWmhnPb65DOd+4L3zSinXt+lMuv7dCq94hkxP7hRuguZr+/fMNqZ2PrR/X0z5F//PLxADE91JSnl9cuLanTv9Xm9UZEt3esbG5pEPFyc+QDzhiVAXBamE2KzY2DOR5+KQBj4Rnq1Q/x59+T8+9LGTXTBsRLZD2mJ2c5iuRKT6/Ne/8/9975J35zY1gPXqqXmH0W98Q3GhBbXcglGQG5AAGsAzYWSzH3xdXDznnv04P/hYVuZVOm1Wbov+uWNdfGQuOzF7aGVj6fzC5eluF1P21f/0tWeefOrxYw9984Xv1HbODI09f/HCvl27r29ldxZ6ncc+u1ybx8kuKC+SGfRXSgYm8IjwiHW2KFBbzojB0Rf+TvWXTtGeGdgM+iUr9Y10Rb3wN+NXXxv/cGETZk7WxoPMJ8qPntg1hfi5r1BDqDHGaG05QMQoYUyalXPqB9+EyRCe+vsQzrJszPxI2U1jKXQ6cHcRvvIPJmveRFSLHbi4ZcdDUvEeffiR1Ru3RkXW99xmmpx48BFNyOuvv550Tqq9zypZ6N7Iax/QVe6XfeVAWoNImUMkTlllrfnU/vCr//wBcHZgZZ0iQDC2ty2GJ/7BxTsDh+0Z09c1opVbSe5ePPahZ5jTmkiAtLBKgVfxhGXZikmumhf+ND75Af/gx0exr3TPer7B0oidTb3VH0o/K/HD/2ytdZiuvXSk95bPw9VmfXJ64ubS0mp/M6pF9Xp9ft8+zxc/evmNzc2ebVfAgqjVvWiyWL4B/a2iupeFIedcKWOd4YQSQKv1//KZGKQDgYKKrExDmnhQ14wtblahG6p8y4sqifCD7SBylUlYZWSlIEwYxmyVQ7VGSmmvv1mc+Qvv5G8We4+nvueki0wt9aWVmcDtlFVcbvNOl2OrTVrLWfS1zqdUrfnAxX/75rff7k60q91ard2carY933/hlRfzfugd/59cuBNGUJiMtYm3/5Dq9/TSlq5q1qiwUCgpdZoSrQTFh/d1wUjnlMA49aoGVkkp7lzqqeqQGlYDotyotKBW1iMz+fjuaUZ3TZLCFGQkdM2gy6/9NTn79coDfy954CkAAGMJYkYLohGIb2xArQE95tSzUuZkGWpTrtkGwi6e/j33eDDZ//HBaFmNNpeX717dTBYuL8RTn80P7RK6LgvNMu2Weq5lsdmERq1x7eZoPcUd87HfSCrULvS+8Lm6daECy9ExPfKoT7QEL/zuhQRojUtX8qhgFBbfhmFy8qMHfDtiOll3ogVelxLhFt8y73yTzBxlR078xEq7b+j83OqcA0KccwjUGAmM3vdMPAjzzbUrE49eTPdAZ1/IXs1e+seNx3/XHNgPJiSZDUoAzuX6wGhDZ6iBan//DtgYGbvMsp0UYzOj49AEuDR2zsIea/sBSw2PCAy+emYdNSW8kYlhdWkzvYnNI413n5gEvkGINYYiGLDZmNw4D+NlfuSZrNP9mbH88ysAWGuR0fvGnjQaOHeIQDCX6M2fQBBeex7IIKvtan/upfHRkyOM+KZyKFwUlLN10aza0cicv9FIRkAKMhFB3gDBHKZezz333hMg9zI2navFgmXjYmBd9+Zidm7ND4jEYss7szqyw+hE/PlPHPXssOhLBqRKEEGObO8uuXfJ2/M47ny8zLcIRv/96QHAAjDGlNRA0WpLBAMAcMRT94QKc63lei/0GmVtYgttTL1EIORoNvoI1pY+qVZdJXBJ2b99zUtiG9eCapSOFoUa/cGv7qIgJYIPLGB1QF36Ziu7l8ksS1br/VBXUvnApHf3ym53K63Slun4wSwhCq3CgAGObprsdnng2RID0CWARXQAFsAC/twEQEruu23gHAJ1SBwCr0yn5cAO8yj2XNwwmaW0n7hmBQTGTMtEzVTBD40fQ9yMO7Owe8YTbbY2TO+sghrDqn7uPTtdEQAnmEmJEVhUTlZDnpedKGrkc7NKIy5cKXV54NiOMPc3cDyWKRGudKVNlLXbS1Qw6OwxWY+L+s9H3fcYMM0AAAVYSURBVP28SU4IOAKIgAQodT+1/KUkdr1PQi9hrdyNSSBJOcnYWHJUEWHEYECJ4EQi06IMfOhWTLVuptut7gEm2irq/uC7byK7TVzuwm5eroCxYMPQhn/nX76ejmg53OQhZbv3eRP72zGJqGAQDG2PaOIoAIzHZuUu7DhKhSA2sRA6537+3D/bI6Jx9ifUYtRa6xAdQUopzwsdWKQkKqk1iSrXI0NKDc4hCwUsbYLVhiJQU8oUMMiKVE9OjERfa4Qu8tnGgPmJu9FzC4EHlrU8Wn3+tfVrrl4/UIubkfEJFxOc2tbuzoClLuUd7pHSuYpPqcnIYKOcPMbA+T4YI//72P8M0v2/vM45Sjk4d1/ueX9dTdQaZexG246XvqmBJwrMYh1A4VwU8OVtFKSMrOZWyBIyHnW0GK5x1gLJgjT53B+MP/CPLr54MaqrtRHoPLtLAD/7ha2g2RroYYki53Vr+kcPaVuEZNtVPL6sMgI+G0NG10oLKvRsCTwjIRjtjAZr0FnnLIADAkgRKVprwWlCNBFOOw0OGCHUGFYWnHkpSyFEVF6RD31rTIEFWmAu5MwWiVlbFMwDxUlAgJRZESmIC9mHyGbANOm9dnbt479x6anfufvmq5Hm+i9euxVIlxc6UlwTG1seF3RnzaAp8yjM6LChfIbaIiGO9B16VjRIYVEQCxodws9UYB0A2PuNg84BonPu/j38pCY4Z5HAT0lnjAFCTJY5wxwYtFAYi74gaeGyAp3vkIDT4BwBACSEMScECN9Zi+3sb64Oful3rv/O3z9+eWuE4SyYknpN50qlS5Kv7e52x+NxFHBp0M8SRvs9EqMOMuCBpCFT4BCQSgseOnDgEMACgHH39XofjEPntANEIASscVpbgmAdcfdf8SUXVPXGNKhZZ4WyubMi9ukgceMUfGq4Q2uctcZo4ixBQMZAeNY4VZZA5cif+Nf/9/Wg6WUN6XcrxWYFG5ZE/v4a963yGg0wmbTk0os/ZLD4Fukeg7DOaaDk0Arf2QzoT0iPgPcx3A89ACA4dOAsGDSMUkLAKanKEigB5xAJoNPWhpSr/ogGVQOGlg4os76Ha+usLDT1jbDEaWe0LaSzFhgScEgQKK2BN0SfRMwCqlLTXlkON5tBWfrtxNq9u0GBGveLIAIc0be+9W1ib/8Ylq4Q3maiCcNFFzJHnPkpe5xz6OD+pA6oAwLojHXOgXUMGUViygKKgnBO7zdyWkDiGDgYp0gMOAvOCeprnzmlOFiwzhkD1oDWoKXThVMStDLGKKPNOOPOs2oMmHHi6LjwtsfjO2/U87FvUk9ujK0UjCkje1duVJARMr6t18+ytMTGDPTXqUzhfs+EMwQsAfuzzf09Wof3W48cAoCz1sgSnCOEEEBwDrQhjBiroCgtOrTOIHgSIRAQMGclIUAUgLKoLTOGKk20QmNAa5BSkYIxRlnI/dlMMoC8SLedkqvnX23I0ZmXv5f1x3k+Ftp97y//kvgeAbA6uwRbF/XkLhgrf2ONWAJO/XwOtdY6Y52xYN39bHo/dTpjdVmA1B6niEgdgLFGSkKIKkuqjUNLtFKIbpCDx0kjLIqcCUq0BQAEcNo4pUBJ1AqNBmtclJcZchMiFCKyIoi5qFJfmmyFrNxWZTm8towMl85cyYabul4lRAhwErYvy84kKM43N4gBxJ+rA9aBdffTjrXWGQ3OMSTEgbVWaw1OC07ROrRojAFjLFqtNRhtnEZpHDo9TIFxrAa6SAkhqC0BitY5bWwpTSGdlOgsoahkSHGs0lsoc1A2GdylpChTx0ItRv2oUll686oy6uwLLwYRm37g0H8Gu2PcrRkx0+AAAAAASUVORK5CYII="
+            alt="">
+          Mariano De Filippo
+        </button>
+        <div class="fondolist dropdown-menu">
+          <ul class="listbtn">
+            <li>
+              <a href=""><i class="fas fa-user"></i></a><a class="itemlist1" href="#">Perfil</a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-heart"></i></a><a class="itemlist2" href="#">Me gusta</a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-broadcast-tower"></i></a><a class="itemlist3" href="#">Emisoras</a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-user-friends"></i></a><a class="itemlist4" href="#"> A quien seguir</a>
+            </li>
+            <li>
+              <a href=""><i class="fas fa-star"></i></a><a class="itemlist5" href="#"> Prueba pro</a>
+            </li>
+          </ul>
+          <hr>
+          <ul class="divider">
+            <li>
+              <a href=""><i class="fas fa-align-justify"></i></a><a class="itemlist6" href="#"> Pistas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="icon">
+        <a href=""><i class="icononavbar fas fa-bell"></i></a>
+        <a href=""><i class="icononavbar fas fa-envelope mx-3"></i></a>
+        <div class=" btn-group">
+          <button type="button" class="btn" id="boton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="">
+            <i class="fas fa-align-justify"></i>
+          </button>
+          <div class="fondolist2 dropdown-menu dropdownMenu g-z-index-header-menu" tabindex="-1"
+            id="dropdown-button-462"
+            style="outline: none; width: 170px; min-height: auto; position: fixed; top: 46px; left: 1150px;">
+            <a class="dropdown-item" href="#">Quiénes Somos</a>
+            <a class="dropdown-item" href="#">Legal</a>
+            <a class="dropdown-item" href="#">Derechos de autor</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Apps para móviles</a>
+            <a class="dropdown-item" href="#">App Pulse <br> para creadores</a>
+            <a class="dropdown-item" href="#">Monetizacion de <br> SounCloud Premier</a>
+            <a class="dropdown-item" href="#">Para Creadores</a>
+            <a class="dropdown-item" href="#">Blog</a>
+            <a class="dropdown-item" href="#">Trabajo</a>
+            <a class="dropdown-item" href="#">Desarrolladores</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Soporte técnico</a>
+            <a class="dropdown-item" href="#">Atajos de teclado</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Suscripcion</a>
+            <a class="dropdown-item" href="#">Configuracion</a>
+            <a class="dropdown-item" href="#">Cerrar sesión</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!---------------------------------------FIN HEADER------------------------------>
+  <!------------------------------------COMIENZO CUERPO---------------------------->
+  <div class="container" style="background-color: white;">
+    <!------------------------------------COMIENZO fredy---------------------------->
+    <div class="container" style="height: 50px;">
+      
+    </div>
+    <div class="container mb-2"
+      style="height:380px;background: linear-gradient(135deg, rgb(129, 100, 109) 0%, rgb(57, 56, 62) 100%); position: relative;">
+
+      <img src="https://i1.sndcdn.com/artworks-000244301474-es6j06-t500x500.jpg" alt="" style=" height: 80%;"
+        class="float-right mt-4">
+      <a href="https://soundcloud.com/capitalcqu/sets/midnight-lofi" class="card-img-overlay play"
+        style="opacity: 1;"><i class="fas fa-play-circle fa-4x "></i></a>
+      <button type="button" class="btn btn-dark " style="position: absolute; margin: 20px 0 0 70px;">cqu</button>
+      <button type="button" class="btn btn-dark "
+        style="font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif; position: absolute; margin: 60px 0 0 70px;">midnight
+        lo-fi</button>
+      <img src="img/ecualizador.png" alt="" style="position: absolute; top: 250px; width: 60%;">
+
+
+    </div>
+    <!------------------------------------fin fredy---------------------------->
+    <div class="row">
+      <div class="col-8">
+
+        <!--menu izquierdo-->
+        <div class="d-flex flex-row justify-content-between align-items-center border-bottom">
+          <div><button type="button" class="btn btn-sm">Añadir a conticuación</button>
+            <button type="button" class="btn btn-sm">Añadir a una lista</button>
+          </div>
+          <div>
+            <h7>Última actualización hace 2 díashace 2 días.</h7>
+          </div>
+        </div>
+        <ul class="list-group list-group-flush">
+          <a href="#" style="text-decoration: none; color: black;">
+            <li class="list-group-item lista2">
+              <div class="row flex-nowrap">
+                <div class="col-1 d-flex justify-content-center align-items-center flex-nowrap">
+                  <img src="https://i1.sndcdn.com/artworks-000342051357-tom8ye-t500x500.jpg" width="35rem" alt="">
+                  <div class="d-flex justify-content-center align-items-center card-img-overlay play_s">
+                    <i class="fas fa-play-circle"
+                      style="color: orangered; background-color: white; border-radius: 50%;"></i>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center flex-nowrap">
+                  <div class="text-black-50">1 Xemi Canovas 2 -</div> Calvin Harris Ft Dua Lipa
+                </div>
+                <div class="col-2 d-flex justify-content-end align-items-center flex-nowrap"><i class="fas fa-play"></i>
+                  21 k</div>
+              </div>
+            </li>
+          </a>
+          <a href="#" style="text-decoration: none; color: black;">
+            <li class="list-group-item lista2">
+              <div class="row flex-nowrap">
+                <div class="col-1 d-flex justify-content-center align-items-center flex-nowrap">
+                  <img src="https://i1.sndcdn.com/artworks-000342051357-tom8ye-t500x500.jpg" width="35rem" alt="">
+                  <div class="d-flex justify-content-center align-items-center card-img-overlay play_s">
+                    <i class="fas fa-play-circle"
+                      style="color: orangered; background-color: white; border-radius: 50%;"></i>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center flex-nowrap">
+                  <div class="text-black-50">1 Xemi Canovas 2 -</div> Calvin Harris Ft Dua Lipa
+                </div>
+                <div class="col-2 d-flex justify-content-end align-items-center flex-nowrap"><i class="fas fa-play"></i>
+                  21 k</div>
+              </div>
+            </li>
+          </a>
+          <a href="#" style="text-decoration: none; color: black;">
+            <li class="list-group-item lista2">
+              <div class="row flex-nowrap">
+                <div class="col-1 d-flex justify-content-center align-items-center flex-nowrap">
+                  <img src="https://i1.sndcdn.com/artworks-000342051357-tom8ye-t500x500.jpg" width="35rem" alt="">
+                  <div class="d-flex justify-content-center align-items-center card-img-overlay play_s">
+                    <i class="fas fa-play-circle"
+                      style="color: orangered; background-color: white; border-radius: 50%;"></i>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center flex-nowrap">
+                  <div class="text-black-50">1 Xemi Canovas 2 -</div> Calvin Harris Ft Dua Lipa
+                </div>
+                <div class="col-2 d-flex justify-content-end align-items-center flex-nowrap"><i class="fas fa-play"></i>
+                  21 k</div>
+              </div>
+            </li>
+          </a>
+          <a href="#" style="text-decoration: none; color: black;">
+            <li class="list-group-item lista2">
+              <div class="row flex-nowrap">
+                <div class="col-1 d-flex justify-content-center align-items-center flex-nowrap">
+                  <img src="https://i1.sndcdn.com/artworks-000342051357-tom8ye-t500x500.jpg" width="35rem" alt="">
+                  <div class="d-flex justify-content-center align-items-center card-img-overlay play_s">
+                    <i class="fas fa-play-circle"
+                      style="color: orangered; background-color: white; border-radius: 50%;"></i>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center flex-nowrap">
+                  <div class="text-black-50">1 Xemi Canovas 2 -</div> Calvin Harris Ft Dua Lipa
+                </div>
+                <div class="col-2 d-flex justify-content-end align-items-center flex-nowrap"><i class="fas fa-play"></i>
+                  21 k</div>
+              </div>
+            </li>
+          </a>
+          <a href="#" style="text-decoration: none; color: black;">
+            <li class="list-group-item lista2">
+              <div class="row flex-nowrap">
+                <div class="col-1 d-flex justify-content-center align-items-center flex-nowrap">
+                  <img src="https://i1.sndcdn.com/artworks-000342051357-tom8ye-t500x500.jpg" width="35rem" alt="">
+                  <div class="d-flex justify-content-center align-items-center card-img-overlay play_s">
+                    <i class="fas fa-play-circle"
+                      style="color: orangered; background-color: white; border-radius: 50%;"></i>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center flex-nowrap">
+                  <div class="text-black-50">1 Xemi Canovas 2 -</div> Calvin Harris Ft Dua Lipa
+                </div>
+                <div class="col-2 d-flex justify-content-end align-items-center flex-nowrap"><i class="fas fa-play"></i>
+                  21 k</div>
+              </div>
+            </li>
+          </a>
+          <a href="#" style="text-decoration: none; color: black;">
+            <li class="list-group-item lista2">
+              <div class="row flex-nowrap">
+                <div class="col-1 d-flex justify-content-center align-items-center flex-nowrap">
+                  <img src="https://i1.sndcdn.com/artworks-000342051357-tom8ye-t500x500.jpg" width="35rem" alt="">
+                  <div class="d-flex justify-content-center align-items-center card-img-overlay play_s">
+                    <i class="fas fa-play-circle"
+                      style="color: orangered; background-color: white; border-radius: 50%;"></i>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center flex-nowrap">
+                  <div class="text-black-50">1 Xemi Canovas 2 -</div> Calvin Harris Ft Dua Lipa
+                </div>
+                <div class="col-2 d-flex justify-content-end align-items-center flex-nowrap"><i class="fas fa-play"></i>
+                  21 k</div>
+              </div>
+            </li>
+          </a>
+          <a href="#" style="text-decoration: none; color: black;">
+            <li class="list-group-item lista2">
+              <div class="row flex-nowrap">
+                <div class="col-1 d-flex justify-content-center align-items-center flex-nowrap">
+                  <img src="https://i1.sndcdn.com/artworks-000342051357-tom8ye-t500x500.jpg" width="35rem" alt="">
+                  <div class="d-flex justify-content-center align-items-center card-img-overlay play_s">
+                    <i class="fas fa-play-circle"
+                      style="color: orangered; background-color: white; border-radius: 50%;"></i>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center flex-nowrap">
+                  <div class="text-black-50">1 Xemi Canovas 2 -</div> Calvin Harris Ft Dua Lipa
+                </div>
+                <div class="col-2 d-flex justify-content-end align-items-center flex-nowrap"><i class="fas fa-play"></i>
+                  21 k</div>
+              </div>
+            </li>
+          </a>
+          <a href="#" style="text-decoration: none; color: black;">
+            <li class="list-group-item lista2">
+              <div class="row flex-nowrap">
+                <div class="col-1 d-flex justify-content-center align-items-center flex-nowrap">
+                  <img src="https://i1.sndcdn.com/artworks-000342051357-tom8ye-t500x500.jpg" width="35rem" alt="">
+                  <div class="d-flex justify-content-center align-items-center card-img-overlay play_s">
+                    <i class="fas fa-play-circle"
+                      style="color: orangered; background-color: white; border-radius: 50%;"></i>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center flex-nowrap">
+                  <div class="text-black-50">1 Xemi Canovas 2 -</div> Calvin Harris Ft Dua Lipa
+                </div>
+                <div class="col-2 d-flex justify-content-end align-items-center flex-nowrap"><i class="fas fa-play"></i>
+                  21 k</div>
+              </div>
+            </li>
+          </a>
+          <a href="#" style="text-decoration: none; color: black;">
+            <li class="list-group-item lista2">
+              <div class="row flex-nowrap">
+                <div class="col-1 d-flex justify-content-center align-items-center flex-nowrap">
+                  <img src="https://i1.sndcdn.com/artworks-000342051357-tom8ye-t500x500.jpg" width="35rem" alt="">
+                  <div class="d-flex justify-content-center align-items-center card-img-overlay play_s">
+                    <i class="fas fa-play-circle"
+                      style="color: orangered; background-color: white; border-radius: 50%;"></i>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center flex-nowrap">
+                  <div class="text-black-50">1 Xemi Canovas 2 -</div> Calvin Harris Ft Dua Lipa
+                </div>
+                <div class="col-2 d-flex justify-content-end align-items-center flex-nowrap"><i class="fas fa-play"></i>
+                  21 k</div>
+              </div>
+            </li>
+          </a>
+          <a href="#" style="text-decoration: none; color: black;">
+            <li class="list-group-item lista2">
+              <div class="row flex-nowrap">
+                <div class="col-1 d-flex justify-content-center align-items-center flex-nowrap">
+                  <img src="https://i1.sndcdn.com/artworks-000342051357-tom8ye-t500x500.jpg" width="35rem" alt="">
+                  <div class="d-flex justify-content-center align-items-center card-img-overlay play_s">
+                    <i class="fas fa-play-circle"
+                      style="color: orangered; background-color: white; border-radius: 50%;"></i>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center flex-nowrap">
+                  <div class="text-black-50">1 Xemi Canovas 2 -</div> Calvin Harris Ft Dua Lipa
+                </div>
+                <div class="col-2 d-flex justify-content-end align-items-center flex-nowrap"><i class="fas fa-play"></i>
+                  21 k</div>
+              </div>
+            </li>
+          </a>
+          <a href="#" style="text-decoration: none; color: black;">
+            <li class="list-group-item lista2">
+              <div class="row flex-nowrap">
+                <div class="col-1 d-flex justify-content-center align-items-center flex-nowrap">
+                  <img src="https://i1.sndcdn.com/artworks-000342051357-tom8ye-t500x500.jpg" width="35rem" alt="">
+                  <div class="d-flex justify-content-center align-items-center card-img-overlay play_s">
+                    <i class="fas fa-play-circle"
+                      style="color: orangered; background-color: white; border-radius: 50%;"></i>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center flex-nowrap">
+                  <div class="text-black-50">1 Xemi Canovas 2 -</div> Calvin Harris Ft Dua Lipa
+                </div>
+                <div class="col-2 d-flex justify-content-end align-items-center flex-nowrap"><i class="fas fa-play"></i>
+                  21 k</div>
+              </div>
+            </li>
+          </a>
+          <a href="#" style="text-decoration: none; color: black;">
+            <li class="list-group-item lista2">
+              <div class="row flex-nowrap">
+                <div class="col-1 d-flex justify-content-center align-items-center flex-nowrap">
+                  <img src="https://i1.sndcdn.com/artworks-000342051357-tom8ye-t500x500.jpg" width="35rem" alt="">
+                  <div class="d-flex justify-content-center align-items-center card-img-overlay play_s">
+                    <i class="fas fa-play-circle"
+                      style="color: orangered; background-color: white; border-radius: 50%;"></i>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center flex-nowrap">
+                  <div class="text-black-50">1 Xemi Canovas 2 -</div> Calvin Harris Ft Dua Lipa
+                </div>
+                <div class="col-2 d-flex justify-content-end align-items-center flex-nowrap"><i class="fas fa-play"></i>
+                  21 k</div>
+              </div>
+            </li>
+          </a>
+          <a href="#" style="text-decoration: none; color: black;">
+            <li class="list-group-item lista2">
+              <div class="row flex-nowrap">
+                <div class="col-1 d-flex justify-content-center align-items-center flex-nowrap">
+                  <img src="https://i1.sndcdn.com/artworks-000342051357-tom8ye-t500x500.jpg" width="35rem" alt="">
+                  <div class="d-flex justify-content-center align-items-center card-img-overlay play_s">
+                    <i class="fas fa-play-circle"
+                      style="color: orangered; background-color: white; border-radius: 50%;"></i>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center flex-nowrap">
+                  <div class="text-black-50">1 Xemi Canovas 2 -</div> Calvin Harris Ft Dua Lipa
+                </div>
+                <div class="col-2 d-flex justify-content-end align-items-center flex-nowrap"><i class="fas fa-play"></i>
+                  21 k</div>
+              </div>
+            </li>
+          </a>
+          <a href="#" style="text-decoration: none; color: black;">
+            <li class="list-group-item lista2">
+              <div class="row flex-nowrap">
+                <div class="col-1 d-flex justify-content-center align-items-center flex-nowrap">
+                  <img src="https://i1.sndcdn.com/artworks-000342051357-tom8ye-t500x500.jpg" width="35rem" alt="">
+                  <div class="d-flex justify-content-center align-items-center card-img-overlay play_s">
+                    <i class="fas fa-play-circle"
+                      style="color: orangered; background-color: white; border-radius: 50%;"></i>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center flex-nowrap">
+                  <div class="text-black-50">1 Xemi Canovas 2 -</div> Calvin Harris Ft Dua Lipa
+                </div>
+                <div class="col-2 d-flex justify-content-end align-items-center flex-nowrap"><i class="fas fa-play"></i>
+                  21 k</div>
+              </div>
+            </li>
+          </a>
+          <a href="#" style="text-decoration: none; color: black;">
+            <li class="list-group-item lista2">
+              <div class="row flex-nowrap">
+                <div class="col-1 d-flex justify-content-center align-items-center flex-nowrap">
+                  <img src="https://i1.sndcdn.com/artworks-000342051357-tom8ye-t500x500.jpg" width="35rem" alt="">
+                  <div class="d-flex justify-content-center align-items-center card-img-overlay play_s">
+                    <i class="fas fa-play-circle"
+                      style="color: orangered; background-color: white; border-radius: 50%;"></i>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center flex-nowrap">
+                  <div class="text-black-50">1 Xemi Canovas 2 -</div> Calvin Harris Ft Dua Lipa
+                </div>
+                <div class="col-2 d-flex justify-content-end align-items-center flex-nowrap"><i class="fas fa-play"></i>
+                  21 k</div>
+              </div>
+            </li>
+          </a>
+          <a href="#" style="text-decoration: none; color: black;">
+            <li class="list-group-item lista2">
+              <div class="row flex-nowrap">
+                <div class="col-1 d-flex justify-content-center align-items-center flex-nowrap">
+                  <img src="https://i1.sndcdn.com/artworks-000342051357-tom8ye-t500x500.jpg" width="35rem" alt="">
+                  <div class="d-flex justify-content-center align-items-center card-img-overlay play_s">
+                    <i class="fas fa-play-circle"
+                      style="color: orangered; background-color: white; border-radius: 50%;"></i>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-center flex-nowrap">
+                  <div class="text-black-50">1 Xemi Canovas 2 -</div> Calvin Harris Ft Dua Lipa
+                </div>
+                <div class="col-2 d-flex justify-content-end align-items-center flex-nowrap"><i class="fas fa-play"></i>
+                  21 k</div>
+              </div>
+            </li>
+          </a>
+
+        </ul>
+      </div>
+      <div class="col-4 lucas_nofix" style="border-bottom-left-radius: #999 ; 
+      ">
+        <div class="d-flex justify-content-between border-bottom">
+          <a href="#" style="text-decoration: none; color: #999;">
+            <span>Todo SoundCloud. Solo para ti.</span>
+          </a>
+        </div>
+        <div class="d-flex flex-column bd-highlight mb-3 border-bottom">
+          <br>
+          <span style="text-decoration: none; color: #999;"><i class="fas fa-user"></i> Todo SoundCloud. Solo para
+            ti.</span>
+          <div class="p-2 bd-highlight d-flex">
+            <span class="d-block imagen-lucas-1">
+            </span>
+            <span class="d-block">
+              <span class="lucas-container">Sara King</span>
+              <a class="lucas-container" style="text-decoration: none; color: #999;" href="">Redbone by Childish Gambino
+                (Cover)</a>
+              <span>
+                <i class="fas fa-play lucas-i"> 279k </i>
+                <i class="fas fa-heart lucas-i">5.159</i>
+              </span>
+            </span>
+          </div>
+          <div class="p-2 bd-highlight d-flex">
+            <span class="d-block imagen-lucas-2">
+            </span>
+            <span class="d-block">
+              <span class="lucas-container">Skizzy Mars</span>
+              <a class="lucas-container" style="text-decoration: none; color: #999;" href="">Changes (Léon - Tired Of
+                Talking Remix)</a>
+              <span>
+                <i class="fas fa-play lucas-i"> 279k </i>
+                <i class="fas fa-heart lucas-i">5.159</i>
+              </span>
+            </span>
+          </div>
+          <div class="p-2 bd-highlight d-flex">
+            <span class="d-block imagen-lucas-3"></span>
+            <span class="d-block">
+              <span class="lucas-container">&Rea</span>
+              <a class="lucas-container" style="text-decoration: none; color: #999;" href="">bby blu</a>
+              <span>
+                <i class="fas fa-play lucas-i"> 279k </i>
+                <i class="fas fa-heart lucas-i">5.159</i>
+              </span>
+            </span>
+            </span>
+          </div>
+        </div>
+        <div>
+          <a class="sc-link-verylight" href="/terms-of-use" style="text-decoration: none; color: #999;"
+            title="Condiciones de uso">Legal</a> ⁃
+
+          <a class="sc-link-verylight" href="/terms-of-use" style="text-decoration: none; color: #999;"
+            title="Condiciones de uso">Privacidad</a> ⁃
+
+          <a class="sc-link-verylight" href="/terms-of-use" style="text-decoration: none; color: #999;"
+            title="Condiciones de uso">Cookies</a> ⁃
+
+          <a class="sc-link-verylight" href="/terms-of-use" style="text-decoration: none; color: #999;"
+            title="Condiciones de uso">SoundCloud Ltd</a> ⁃
+
+          <a class="sc-link-verylight" href="/terms-of-use" style="text-decoration: none; color: #999;"
+            title="Condiciones de uso">Recursos del creador</a> ⁃
+
+          <a class="sc-link-verylight" href="/terms-of-use" style="text-decoration: none; color: #999;"
+            title="Condiciones de uso">Blog</a> ⁃
+
+          <a class="sc-link-verylight" href="/terms-of-use" style="text-decoration: none; color: #999;"
+            title="Condiciones de uso">Listas de exitos</a> ⁃
+
+          <a class="sc-link-verylight" href="/terms-of-use" style="text-decoration: none; color: #999;"
+            title="Condiciones de uso">Busquedas populares</a>
+        </div>
+        <div style="margin-top: 20px;">
+          <a href="" style="text-decoration: none; color: #38d;"> Idioma: Español
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--------------------------------------FIN CUERPOR------------------------------>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

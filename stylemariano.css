@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav a:hover{
+    color: white;
+}
+.navbar{
+    background: #333333;
+    padding: 0.0vw;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.imgnavbar{
+    width: 5vw; 
+    height: 4vw;
+}
+.nav a{
+    color: #CCCCCC;
+}
+.headerSearch__input{
+    border-radius: 0.5vw; 
+    width: 40vw; 
+    background:#CCCCCC; 
+    color: #666; 
+    outline:0; 
+    border: 0; 
+    padding: 5px 7px;
+    background: #e5e5e5;
+}
+.uploadButton__title{
+    color: #CCCCCC;
+}
+.dropdown-toggle{
+    color: #CCCCCC;
+}
+.icon{
+    margin-right: 3vw; 
+    font-size: 1.5vw;
+}
+.icononavbar{
+    color: #CCCCCC;
+}
+.icononavbar:hover{
+    color: white;
+}
+.lupa{
+    width: 15px;
+    height: 15px;
+    color: gray;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+}
+.lupa:hover{
+    cursor: pointer;
+}
+.busqueda{
+    padding: 9px 10px 8px;
+    position: relative;
+    -webkit-appearance: none;
+}
+.subirheader{
+    text-decoration: none;
+}
+.subirheader:hover{
+    color: white; 
+    text-decoration: none;
+}
+.btn:hover{
+    color: white;
+    text-decoration: none;
+}
+.fondolist{
+    background: #333;
+}
+.fondolist2{
+    background: #333;
+    margin-right: 2vw;
+}
+.fondolist2 a{
+    color: #CCCCCC;
+}
+.listbtn li:hover{
+    background:rgba(238, 232, 232, 0.171)
+}
+.listbtn{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listbtn li a{
+    color: #CCCCCC;
+    background: none;
+    text-decoration: none;
+}
+.divider{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.divider li a{
+    text-decoration: none;
+    color:#CCCCCC;
+}
+.divider li:hover{
+   background: rgba(238, 232, 232, 0.171);
+}
+.iconodesp{
+    color: #CCCCCC;
+}
+#boton{
+    color: #CCCCCC;
+    margin-top: -5px;
+}
+#boton:hover{
+    color: white;
+}
+.itemlist1{
+    margin-left: 15px;
+}
+.itemlist2{
+    margin-left: 13px;
+}
+.itemlist3{
+    margin-left: 10px;
+}
+.itemlist4{
+    margin-left: 6px;
+}
+.itemlist5{
+    margin-left: 8px;
+}
+.itemlist6{
+    margin-left: 11px;
+}
+.imgperfil{
+    border-radius: 4vw;
+    width: 25px;
+    height: 25px;
+    margin-right: 7px;
+}

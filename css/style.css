@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.gbot{
+  color: black;
+  border-color: black;
+  background-color: rgb(255, 255, 255);
+}
+.gbot:hover{
+  color: rgb(255, 115, 0);
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 115, 0);
+}
+
+.play {
+  width: 10rem;
+  height: 10rem;
+  opacity: 0;
+}
+
+.play i {
+  color: rgb(255, 86, 24);
+  background-color: white;
+  border-radius: 50%;
+}
+.play_s {
+  opacity: 0;
+}
+.play_s:hover {
+  opacity: 1;
+}
+.play i:hover{
+  color: rgb(255, 68, 0);
+}
+
+.play:hover {
+  opacity: 1;
+}
+.play-grande{
+  color: rgb(255, 86, 24); 
+  background-color: white; border-radius: 50%;
+}
+.play-grande:hover{
+  color: rgb(255, 68, 0);
+}
+
+.fondo-gradiente-rosa {
+  background-image: linear-gradient(135deg, rgb(220, 221, 234) 0%, rgb(200, 159, 188) 100%);
+}
+
+.fondo-gradiente-verde {
+  background-image: linear-gradient(135deg, rgb(107, 152, 156) 0%, rgb(33, 58, 64) 100%);
+}
+
+.fondo-gradiente-negro {
+  background-image: linear-gradient(135deg, rgb(149, 160, 113) 0%, rgb(41, 34, 78) 100%);
+}
+
+.lista {
+  height: 220px;
+  overflow: auto;
+}
+
+.lista div:hover {
+  background-color: rgba(255, 236, 242, 0.322) !important;
+}
+.fredy .play{
+  opacity: 0;
+
+}
+.fredy .hover1:hover{
+  opacity: 1;
+  color: #f50;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.fredy .carousel-control-prev-icon, .carousel-control-next-icon{
+height: 40px;
+width: 40px;
+outline: #f50;
+background-size: 100%, 100%;
+border-radius: 10%;
+border: 1px solid #f50;
+background-color: white;
+
+}
+.fredy .carousel-control-next-icon{
+  position: relative;
+  left: 20px;
+  bottom: 20px;
+}
+.fredy .carousel-control-prev-icon{
+  position: relative;
+  right:20px;
+  bottom: 20px;
+  
+}
+.fredy .carousel-control-next-icon:after
+{
+content: '>';
+font-size: 23px;
+color: #f50;
+}
+
+.fredy .carousel-control-prev-icon:after {
+content: '<';
+font-size: 23px;
+color: #f50;
+}
+.fredy .carousel-control-prev{
+  width: 5%;
+  opacity: 1;
+}
+.fredy .carousel-control-next{
+  width: 5%;
+  opacity: 1;
+}
+.fredy .texto{
+ font-size: .8rem;
+}
+
