@@ -1,0 +1,1386 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="lucas.css">
+  <script src="https://kit.fontawesome.com/1078660f04.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="stylemariano.css">
+  <title>Sound Cloud</title>
+</head>
+
+<body style="background-color: rgb(235, 235, 235);">
+  <!------------------------------------COMIENZO HEADER---------------------------->
+  <header>
+      <div class="navbar">
+          <a href=""><img class="imgnavbar" src="descarga.jfif" alt="#"></a>
+          <div>
+            <nav class="nav nav-pills flex-column flex-sm-row">
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">Inicio</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">Stream</a>
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">Biblioteca</a>
+            </nav>
+          </div>
+          <div>
+            <form class="busqueda">
+              <input class="headerSearch__input sc-input g-all-transitions-300" placeholder="Buscar" type="search" name="q"
+                autocomplete="off" aria-label="Buscar" aria-autocomplete="list" aria-owns="searchMenuList">
+              <i class="lupa fas fa-search"></i>
+            </form>
+          </div>
+          <div>
+            <a href="/upload" class="uploadButton header__link subirheader" tabindex="0">
+              <span class="uploadButton__title subirheader">Subir</span>
+              <span class="uploadButton__status"></span>
+            </a>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"aria-expanded="false">
+              <img class="imgperfil" src="./img/yo.png" alt="">
+              Guillermo
+            </button>
+            <div class="fondolist dropdown-menu">
+              <ul class="listbtn">
+                <li>
+                  <a href=""><i class="fas fa-user"></i></a><a class="itemlist1" href="#">Perfil</a>
+                </li>
+                <li>
+                  <a href=""><i class="fas fa-heart"></i></a><a class="itemlist2" href="#">Me gusta</a>
+                </li>
+                <li>
+                  <a href=""><i class="fas fa-broadcast-tower"></i></a><a class="itemlist3" href="#">Emisoras</a>
+                </li>
+                <li>
+                  <a href=""><i class="fas fa-user-friends"></i></a><a class="itemlist4" href="#"> A quien seguir</a>
+                </li>
+                <li>
+                  <a href=""><i class="fas fa-star"></i></a><a class="itemlist5" href="#"> Prueba pro</a>
+                </li>
+              </ul>
+              <hr>
+              <ul class="divider">
+                <li>
+                  <a href=""><i class="fas fa-align-justify"></i></a><a class="itemlist6" href="#"> Pistas</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="icon">
+            <a href=""><i class="icononavbar fas fa-bell"></i></a>
+            <a href=""><i class="icononavbar fas fa-envelope mx-3"></i></a>
+    <div class=" btn-group">
+      <button type="button" class="btn" id="boton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="">
+        <i class="fas fa-align-justify"></i>
+      </button>
+      <div class="fondolist2 dropdown-menu dropdownMenu g-z-index-header-menu" tabindex="-1" id="dropdown-button-462" style="outline: none; width: 170px; min-height: auto; position: fixed; top: 46px; left: 1150px;">
+        <a class="dropdown-item" href="#">Quiénes Somos</a>
+        <a class="dropdown-item" href="#">Legal</a>
+        <a class="dropdown-item" href="#">Derechos de autor</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Apps para móviles</a>
+        <a class="dropdown-item" href="#">App Pulse <br> para creadores</a>
+        <a class="dropdown-item" href="#">Monetizacion de <br> SounCloud Premier</a>
+        <a class="dropdown-item" href="#">Para Creadores</a>
+        <a class="dropdown-item" href="#">Blog</a>
+        <a class="dropdown-item" href="#">Trabajo</a>
+        <a class="dropdown-item" href="#">Desarrolladores</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Soporte técnico</a>
+        <a class="dropdown-item" href="#">Atajos de teclado</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Suscripcion</a>
+        <a class="dropdown-item" href="#">Configuracion</a>
+        <a class="dropdown-item" href="#">Cerrar sesión</a>
+      </div>
+    </div>
+        </div>
+        </div>
+  </header class="zindex">
+  <!---------------------------------------FIN HEADER------------------------------>
+  <!------------------------------------COMIENZO CUERPO---------------------------->
+  <div class="container" style="background-color: white;">
+    <div class="row">
+      <div class="col-lg-8 col-sm-6 col-12" style="margin-top:7vw;">
+        <!--menu izquierdo-->
+        <div class="container">
+          <h5 class="mt-1">SoundCloud semanal</h5>
+          <h6 class="mt-1">Todo SoundCloud. Solo para ti.</h6>
+          <div class="row mt-1 fondo-gradiente-verde">
+            <div class="col-lg-4 mt-3 mb-3">
+              <div class="card bg-dark" style="border: transparent;">
+                <img src="https://i1.sndcdn.com/artworks-000342051357-tom8ye-t500x500.jpg" class="card-img" alt="..." />
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <a href="https://soundcloud.com/discover/sets/weekly:487454298"><i class="fas fa-play-circle fa-5x play-grande"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="lista">
+                <a href="audio/01 Bruno Mars - That's What I Like (Feat. Gucci Mane) [Remix].mp3">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 1
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 2
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 3
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 4
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 5
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 6
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 7
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-end align-items-center mt-3">
+            <div>
+              <button type="button" class="btn btn-light btn-sm">
+                Ir a la lista
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <h5 class="mt-5">Más música de la que te gusta</h5>
+          <h6 class="mt-1">
+            Sugerencias basadas en lo que te ha gustado o has reproducido
+          </h6>
+          <div class="row mt-1 fondo-gradiente-rosa">
+            <div class="col-lg-4 mt-3 mb-3">
+              <div class="card bg-dark" style="border: transparent;">
+                <img src="img/artworks-000373160631-wynpqy-t500x500.jpg" class="card-img" alt="..." />
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <a href=""><i class="fas fa-play-circle fa-5x play-grande"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="lista">
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 1
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 2
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 3
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 4
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 5
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 6
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 7
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-between align-items-center mt-3">
+            <div class="dropdown">
+              <h6>
+                <a href="#"><i class="fas fa-user-circle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false"></i>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">
+                      Nombre de usuario
+                    </button>
+                  </div>
+                </a>
+                Según tus reproducciones
+              </h6>
+            </div>
+            <div>
+              <button type="button" class="btn btn-light btn-sm">
+                Ir a la lista
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <h5 class="mt-5">Artistas que debe conocer</h5>
+          <h6 class="mt-1">
+            Pistas destacadas de artistas parecidos a Las Más Bailadas.
+          </h6>
+            <div class="container">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card-deck">
+                      <div class="card" style="border: white;">
+                        <img src="https://i1.sndcdn.com/avatars-000270332909-91utdt-t500x500.jpg"
+                          class="card-img-top border border-dark" alt="..." style="width: 10rem;" />
+                        <a href="#">
+                          <div class="card-img-overlay d-flex justify-content-center align-items-center play">
+                            <i class="fas fa-play-circle fa-3x"></i>
+                          </div>
+                        </a>
+                        <div>
+                          <div class="card-body" style="width: 10rem;">
+                            <a href="#" style="text-decoration: none; color: black;">
+                              <h6 style="font-size: .8rem;">NovaFxDj</h6>
+                            </a>
+                            <h6 style="font-size: .6rem; color: rgb(82, 82, 82);">
+                              Pistas destacadas
+                            </h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card" style="border: white;">
+                        <img src="https://i1.sndcdn.com/avatars-000221488204-qqwi5t-t500x500.jpg"
+                          class="card-img-top  border border-dark" alt="..." style="width: 10rem;" />
+                        <a href="#">
+                          <div class="card-img-overlay d-flex justify-content-center align-items-center play">
+                            <i class="fas fa-play-circle fa-3x"></i>
+                          </div>
+                        </a>
+                        <div class="card-body" style="width: 10rem;;">
+                          <a href="#" style="text-decoration: none; color: black;">
+                            <h6 style="font-size: .8rem;">Sergio Diaz Dj</h6>
+                          </a>
+                          <h6 style="font-size: .6rem; color: rgb(82, 82, 82);">
+                            Pistas destacadas
+                          </h6>
+                        </div>
+                      </div>
+                      <div class="card" style="border: white;">
+                        <img src="https://i1.sndcdn.com/avatars-000543175092-g7auqm-t500x500.jpg"
+                          class="card-img-top border border-dark" alt="..." style="width: 10rem;" />
+                        <a href="#">
+                          <div class="card-img-overlay d-flex justify-content-center align-items-center play">
+                            <i class="fas fa-play-circle fa-3x"></i>
+                          </div>
+                        </a>
+                        <div class="card-body" style="width: 10rem;">
+                          <a href="#" style="text-decoration: none; color: black;">
+                            <h6 style="font-size: .8rem;">PANDARECORDS</h6>
+                          </a>
+                          <h6 style="font-size: .6rem; color: rgb(82, 82, 82);">
+                            Pistas destacadas
+                          </h6>
+                        </div>
+                      </div>
+                      <div class="card" style="border: white;">
+                        <img src="https://i1.sndcdn.com/avatars-000483138519-ltqkmf-t500x500.jpg"
+                          class="card-img-top  border border-dark" alt="..." style="width: 10rem;" />
+                        <a href="#">
+                          <div class="card-img-overlay d-flex justify-content-center align-items-center play">
+                            <i class="fas fa-play-circle fa-3x"></i>
+                          </div>
+                        </a>
+                        <div class="card-body" style="width: 10rem;">
+                          <a href="#" style="text-decoration: none; color: black;">
+                            <h6 style="font-size: .8rem;">JavierDeclara</h6>
+                          </a>
+                          <h6 style="font-size: .6rem; color: rgb(82, 82, 82);">
+                            Pistas destacadas
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card-deck">
+                      <div class="card" style="border: white;">
+                        <img src="https://i1.sndcdn.com/avatars-000701202304-oigipm-t500x500.jpg"
+                          class="card-img-top  border border-dark" alt="..." style="width: 10rem;" />
+                        <a href="#">
+                          <div class="card-img-overlay d-flex justify-content-center align-items-center play">
+                            <i class="fas fa-play-circle fa-3x"></i>
+                          </div>
+                        </a>
+                        <div class="card-body" style="width: 10rem;">
+                          <a href="#" style="text-decoration: none; color: black;">
+                            <h6 style="font-size: .8rem;">
+                              Original Extended
+                            </h6>
+                          </a>
+                          <h6 style="font-size: .6rem; color: rgb(82, 82, 82);">
+                            Pistas destacadas
+                          </h6>
+                        </div>
+                      </div>
+                      <div class="card" style="border: white;">
+                        <img src="https://i1.sndcdn.com/avatars-000504822327-qwml7f-t500x500.jpg"
+                          class="card-img-top  border border-dark" alt="..." style="width: 10rem;" />
+                        <a href="#">
+                          <div class="card-img-overlay d-flex justify-content-center align-items-center play">
+                            <i class="fas fa-play-circle fa-3x"></i>
+                          </div>
+                        </a>
+                        <div class="card-body" style="width: 10rem;">
+                          <a href="#" style="text-decoration: none; color: black;">
+                            <h6 style="font-size: .8rem;">
+                              STREET URBAN MUSIC
+                            </h6>
+                          </a>
+                          <h6 style="font-size: .6rem; color: rgb(82, 82, 82);">
+                            Pistas destacadas
+                          </h6>
+                        </div>
+                      </div>
+                      <div class="card" style="border: white;">
+                        <img src="https://i1.sndcdn.com/artworks-000043004326-5hhzrg-t500x500.jpg"
+                          class="card-img-top  border border-dark" alt="..." style="width: 10rem;" />
+                        <a href="#">
+                          <div class="card-img-overlay d-flex justify-content-center align-items-center play">
+                            <i class="fas fa-play-circle fa-3x"></i>
+                          </div>
+                        </a>
+                        <div class="card-body" style="width: 10rem;">
+                          <a href="#" style="text-decoration: none; color: black;">
+                            <h6 style="font-size: .8rem;">Andres</h6>
+                          </a>
+                          <h6 style="font-size: .6rem; color: rgb(82, 82, 82);">
+                            Pistas destacadas
+                          </h6>
+                        </div>
+                      </div>
+                      <div class="card" style="border: white;">
+                        <img src="https://i1.sndcdn.com/artworks-000051023257-c6k2r9-t500x500.jpg"
+                          class="card-img-top  border border-dark" alt="..." style="width: 10rem;" />
+                        <a href="#">
+                          <div class="card-img-overlay d-flex justify-content-center align-items-center play">
+                            <i class="fas fa-play-circle fa-3x"></i>
+                          </div>
+                        </a>
+                        <div class="card-body" style="width: 10rem;">
+                          <a href="#" style="text-decoration: none; color: black;">
+                            <h6 style="font-size: .8rem;">Cerati</h6>
+                          </a>
+                          <h6 style="font-size: .6rem; color: rgb(82, 82, 82);">
+                            Pistas destacadas
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card-deck">
+                      <div class="card" style="border: white;">
+                        <img src="https://i1.sndcdn.com/artworks-000338943357-mjo1rb-t500x500.jpg
+                                  " class="card-img-top  border border-dark" alt="..." style="width: 10rem;" />
+                        <a href="#">
+                          <div class="card-img-overlay d-flex justify-content-center align-items-center play">
+                            <i class="fas fa-play-circle fa-3x"></i>
+                          </div>
+                        </a>
+                        <div class="card-body" style="width: 10rem;">
+                          <a href="#" style="text-decoration: none; color: black;">
+                            <h6 style="font-size: .8rem;">coldplay</h6>
+                          </a>
+                          <h6 style="font-size: .6rem; color: rgb(82, 82, 82);">
+                            Pistas destacadas
+                          </h6>
+                        </div>
+                      </div>
+                      <div class="card" style="border: white;">
+                        <img src="https://i1.sndcdn.com/artworks-000035588878-l1xed2-t500x500.jpg"
+                          class="card-img-top  border border-dark" alt="..." style="width: 10rem;" />
+                        <a href="#">
+                          <div class="card-img-overlay d-flex justify-content-center align-items-center play">
+                            <i class="fas fa-play-circle fa-3x"></i>
+                          </div>
+                        </a>
+                        <div class="card-body" style="width: 10rem;">
+                          <a href="#" style="text-decoration: none; color: black;">
+                            <h6 style="font-size: .8rem;">Notevagustar</h6>
+                          </a>
+                          <h6 style="font-size: .6rem; color: rgb(82, 82, 82);">
+                            Pistas destacadas
+                          </h6>
+                        </div>
+                      </div>
+                      <div class="card" style="border: white;">
+                        <img src="https://i1.sndcdn.com/artworks-000199351510-26dmmb-t500x500.jpg"
+                          class="card-img-top  border border-dark" alt="..." style="width: 10rem;" />
+                        <a href="#">
+                          <div class="card-img-overlay d-flex justify-content-center align-items-center play">
+                            <i class="fas fa-play-circle fa-3x"></i>
+                          </div>
+                        </a>
+                        <div class="card-body" style="width: 10rem;">
+                          <a href="#" style="text-decoration: none; color: black;">
+                            <h6 style="font-size: .8rem;">Sia</h6>
+                          </a>
+                          <h6 style="font-size: .6rem; color: rgb(82, 82, 82);">
+                            Pistas destacadas
+                          </h6>
+                        </div>
+                      </div>
+                      <div class="card" style="border: white;">
+                        <img src="https://i1.sndcdn.com/artworks-000052041802-09mxpa-t500x500.jpg"
+                          class="card-img-top  border border-dark" alt="..." style="width: 10rem;" />
+                        <a href="#">
+                          <div class="card-img-overlay d-flex justify-content-center align-items-center play">
+                            <i class="fas fa-play-circle fa-3x"></i>
+                          </div>
+                        </a>
+                        <div class="card-body" style="width: 10rem;">
+                          <a href="#" style="text-decoration: none; color: black;">
+                            <h6 style="font-size: .8rem;">U2</h6>
+                          </a>
+                          <h6 style="font-size: .6rem; color: rgb(82, 82, 82);">
+                            Pistas destacadas
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"
+                  style="width: 0%; top: -62px;">
+                  <span class="btn btn-danger btn-sm" aria-hidden="true"><</span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"
+                  style="width: 0%; top: -62px;">
+                  <span class="btn btn-danger btn-sm" aria-hidden="true">></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          <div class="d-flex flex-row justify-content-end align-items-center mt-3">
+            <div>
+              <button type="button" class="btn btn-light btn-sm">
+                Ir a la lista
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <h5 class="mt-5">Más música de la que te gusta</h5>
+          <h6 class="mt-1">
+            Sugerencias basadas en lo que te ha gustado o has reproducido
+          </h6>
+          <div class="row mt-1 fondo-gradiente-verde">
+            <div class="col-lg-4 mt-3 mb-3">
+              <div class="card bg-dark">
+                <img src="img/artworks-000373160631-wynpqy-t500x500.jpg" class="card-img" alt="..." />
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                  <a href=""><i class="fas fa-play-circle fa-5x play-grande"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="lista">
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 1
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 2
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 3
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 4
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 5
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 6
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="btn border-bottom m-1 bg-transparent text-white">
+                    Las Más Bailadas — LMB Premium - Bootleg Pack 7
+                    <i class="fas fa-play"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-row justify-content-between align-items-center mt-3">
+            <div class="dropdown">
+              <h6>
+                <a href="#"><i class="fas fa-user-circle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false"></i>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">
+                      Nombre de usuario
+                    </button>
+                  </div>
+                </a>
+                Según tus reproducciones
+              </h6>
+            </div>
+            <div>
+              <button type="button" class="btn btn-light btn-sm">
+                Ir a la lista
+              </button>
+            </div>
+          </div>
+        </div>
+        <section class="fredy">
+          <div class="container mt-4">
+            <h5>chill</h5>
+            <h6>Listas populares de la comunidad de SoundCloud.</h6>
+          </div>
+          <div class="container">
+            <div id="carouselExampleControls1" class="carousel slide " data-interval="false" data-ride="carousel" style="border: none;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card-deck">
+                    <div class="card">
+                      <div>
+                        <img src="img/1.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x fontas"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/2.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/3.jpg" class="card-img-top " alt="...">
+                        <a href="index3.html"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <br> <span class="text-muted"> Index3</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/4.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card-deck">
+                    <div class="card">
+                      <div>
+                        <img src="img/5.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/6.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/7.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/8.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card-deck">
+                    <div class="card">
+                      <div>
+                        <img src="img/9.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/10.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/11.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/12.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+
+
+          <div class="container mt-4">
+            <h5>De fiesta</h5>
+            <h6>Listas populares de la comunidad de SoundCloud.</h6>
+          </div>
+          <div class="container">
+            <div id="carouselControls1" class="carousel slide " data-interval="false" data-ride="carousel" style="border: none;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card-deck">
+                    <div class="card">
+                      <div>
+                        <img src="img/13.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/14.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/15.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/16.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card-deck">
+                    <div class="card">
+                      <div>
+                        <img src="img/17.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/18.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/19.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/20.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card-deck">
+                    <div class="card">
+                      <div>
+                        <img src="img/21.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/22.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/23.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/24.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselControls1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselControls1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="container mt-4">
+            <h5>Relax</h5>
+            <h6>Listas populares de la comunidad de SoundCloud.</h6>
+          </div>
+          <div class="container">
+            <div id="carouselControls2" class="carousel slide "  data-interval="false" data-ride="carousel" style="border: none;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card-deck">
+                    <div class="card">
+                      <div>
+                        <img src="img/25.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/26.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/27.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/28.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card-deck">
+                    <div class="card">
+                      <div>
+                        <img src="img/29.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/30.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/31.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/32.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card-deck">
+                    <div class="card">
+                      <div>
+                        <img src="img/33.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/34.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/35.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/36.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselControls2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselControls2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="container mt-4">
+            <h5>Para estudiar</h5>
+            <h6>Listas populares de la comunidad de SoundCloud.</h6>
+          </div>
+          <div class="container">
+            <div id="carouselControls3" class="carousel slide " data-interval="false" data-ride="carousel" style="border: none;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card-deck">
+                    <div class="card">
+                      <div>
+                        <img src="img/37.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/38.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/39.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/40.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card-deck">
+                    <div class="card">
+                      <div>
+                        <img src="img/41.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/42.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/43.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/44.jpg" class="card-img-top " alt="...">
+                        <a href="https://soundcloud.com/bi-s-n-3/sets/chilloutwithme"
+                          class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card-deck">
+                    <div class="card">
+                      <div>
+                        <img src="img/45.jpg" class="card-img-top " alt="...">
+                        <a href="" class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/46.jpg" class="card-img-top " alt="...">
+                        <a href="" class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/47.jpg" class="card-img-top " alt="...">
+                        <a href="" class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <img src="img/48.jpg" class="card-img-top " alt="...">
+                        <a href="" class="card-img-overlay play hover1"><i class="fas fa-play-circle fa-4x"></i></a>
+                      </div>
+                      <div class="texto">
+                        <p class="card-tex"><small></small> musicas relaxantes
+                          <span class="text-muted"> lihcogine</span></small></p>
+                        <p class="card-text"><small class="text-muted"></small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselControls3" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselControls3" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+        </section>
+      </div>
+      <div class="col-4 lucas"   style="border-bottom-left-radius: #999 ;">
+        <div class="d-flex justify-content-between border-bottom">
+        <a href="#" style="text-decoration: none; color: #999;">
+            <i class="fas fa-history"></i>
+           <span>Historial de reproduccion</span>
+          </a>
+          <a href="" style="text-decoration: none; color:#999;">
+             <span> Ver todo</span>
+          </a>
+      </div>
+      <div class="d-flex flex-column bd-highlight mb-3 border-bottom">
+          <div class="p-2 bd-highlight d-flex">
+            <span class="d-block imagen-lucas-1">
+            </span>
+            <span class="d-block">
+              <span class="lucas-container">Sara King</span>
+              <a class="lucas-container" style="text-decoration: none; color: #999;" href="">Redbone by Childish Gambino (Cover)</a>
+            <span>
+            <i class="fas fa-play lucas-i"> 279k </i>
+            <i class="fas fa-heart lucas-i">5.159</i>
+          </span>
+          </span>
+          </div>
+          <div class="p-2 bd-highlight d-flex">
+            <span class="d-block imagen-lucas-2">
+            </span>
+            <span class="d-block">
+              <span class="lucas-container">Skizzy Mars</span>
+              <a class="lucas-container" style="text-decoration: none; color: #999;" href="">Changes (Léon - Tired Of Talking Remix)</a>
+              <span>
+                <i class="fas fa-play lucas-i"> 279k </i>
+                <i class="fas fa-heart lucas-i">5.159</i>
+              </span>
+            </span>
+          </div>
+          <div class="p-2 bd-highlight d-flex">
+            <span class="d-block imagen-lucas-3"></span>
+            <span class="d-block">
+            <span class="lucas-container">&Rea</span>
+            <a class="lucas-container" style="text-decoration: none; color: #999;" href="">bby blu</a>
+            <span>
+                <i class="fas fa-play lucas-i"> 279k </i>
+                <i class="fas fa-heart lucas-i">5.159</i>
+            </span>
+          </span>
+        </span>
+      </div>
+        </div>
+        <div>
+            <a class="sc-link-verylight"  href="/terms-of-use" style="text-decoration: none; color: #999;" title="Condiciones de uso">Legal</a> ⁃
+  
+            <a class="sc-link-verylight" href="/terms-of-use" style="text-decoration: none; color: #999;" title="Condiciones de uso">Privacidad</a> ⁃
+  
+            <a class="sc-link-verylight" href="/terms-of-use" style="text-decoration: none; color: #999;" title="Condiciones de uso">Cookies</a> ⁃
+  
+            <a class="sc-link-verylight" href="/terms-of-use" style="text-decoration: none; color: #999;" title="Condiciones de uso">SoundCloud Ltd</a> ⁃
+  
+            <a class="sc-link-verylight" href="/terms-of-use" style="text-decoration: none; color: #999;" title="Condiciones de uso">Recursos del creador</a> ⁃
+  
+            <a class="sc-link-verylight" href="/terms-of-use" style="text-decoration: none; color: #999;" title="Condiciones de uso">Blog</a> ⁃
+  
+            <a class="sc-link-verylight" href="/terms-of-use" style="text-decoration: none; color: #999;" title="Condiciones de uso">Listas de exitos</a> ⁃
+  
+            <a class="sc-link-verylight" href="/terms-of-use" style="text-decoration: none; color: #999;" title="Condiciones de uso">Busquedas populares</a>
+        </div>
+        <div style="margin-top: 20px;">
+          <a href="" style="text-decoration: none; color: #38d;"> Idioma: Español
+          </a>
+        </div>
+    </div>
+    </div>
+
+  
+
+  <!--------------------------------------FIN CUERPOR------------------------------>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
